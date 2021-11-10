@@ -2,6 +2,8 @@
 
 Bem-vinda ao nosso primeiro desafio! :smiley: :smiley: :smiley:
 
+Vamos criar um hotsite seguindo um layout do behance.
+
 O objetivo aqui não é o "pixel perfect", mas sim considerar uma boa organização do projeto. Utilizar o padrão BEM para a nomenclatura das classes CSS e a arquitetura SMACSS para organização dos arquivos.
 
 Usar o pré-processador _**Sass**_. :pray:  :pray: :pray: :rocket: :rocket: :rocket:
