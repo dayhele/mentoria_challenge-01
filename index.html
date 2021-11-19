@@ -4,30 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/layout/styles.css" />
     <title>Challenge 1</title>
   </head>
   <body>
     <header class="header">
-        <div class="">
-            <img src="" alt=""/>
-            <img src="" alt=""/>
-            <img src="" alt=""/>
-            <a href="#contact">Contato</a>
+        <div class="header__content">
+          <div class="header__content__images">
+            <img class="header__content--image" src="./assets/img/logo-retina-socorro.png" alt=""/>
+            <img class="header__content--image" src="./assets/img/socorro-brasao.png" alt=""/>
+            <img class="header__content--image" src="./assets/img/novo-logo-gestao-site.png" alt=""/>
+          </div>
+          <div class="header__content__buttons">
+            <a class="header__content--contactButton" href="#contact">Contato</a>
+            <a class="header__content--joinButton" href="">Participe</a>
+          </div>
         </div>
-      
-        <div class="">
-            <a href="">Participe</a>
+        <div class="header__background">
+          <img class="header__background--image" src="./assets/img/socorro-portal.jpg" alt="">
         </div>
     </header>
-    <section>
-        <h1>Mapa do turismo sustentável</h1>
-        <p>Estamos reposicionando Socorro como um destino turístico sustentável. Participe de nosso programa! 
+    <section class="section">
+      <div class="section__content">
+        <h1 class="section__content--title">Mapa do Turismo Sustentável</h1>
+        <p class="section__content--subtitle">Estamos reposicionando Socorro como um destino turístico sustentável. Participe de nosso programa! 
             Coloque seu produto, serviço ou projeto socioambiental em nosso Mapa do Turismo Sustentável.</p>
-        <img src="" alt=""/>
-        <a href="#join">Participe</a>
+        <img class="section__content--image" src="./assets/img/cropped-brasao.png" alt=""/>
+        <a class="section__content--joinButton" href="#join">Participe</a>
+      </div>
+      <!-- <div class="section__background">
+        <img class="section__background--image" src="" alt="">
+      </div> -->
     </section>
-    <section>
+    <!-- <section>
         <form action="" method="post">
             <h2>Envie seu projeto</h2>
             <fieldset>
@@ -76,6 +85,6 @@
         <img src="" alt=""/>
         <img src="" alt=""/>
         <img src="" alt=""/>
-    </footer>
+    </footer> -->
   </body>
 </html>
