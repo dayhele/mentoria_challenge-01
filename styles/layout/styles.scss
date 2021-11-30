@@ -65,7 +65,7 @@
     }
 }
 
-.section {
+.main {
     &__content {
         width: calc(100% - 138px);
         display: flex;
@@ -104,6 +104,43 @@
             border-radius: 8px;
             padding: 12px 32px;
             width: fit-content;
+        }
+    }
+}
+
+.form {
+    background: $light-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__contact {
+        background: $white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 14px;
+        padding: 38px 36px;
+        margin: 56px;
+
+        &--title {
+            font-family: $font-secondary;
+            color: $dark-blue;
+            font-size: 26px;
+            font-weight: 700;
+            padding: 0 0 24px 0;
+        }
+
+        &--field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__decoration {
+            background: $white;
+            &--img {
+                width: 100%;
+            }
         }
     }
 }

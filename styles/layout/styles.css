@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Mulish:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Mulish:wght@400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -92,7 +92,7 @@ a {
   z-index: 0;
 }
 
-.section__content {
+.main__content {
   width: calc(100% - 138px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,7 +104,7 @@ a {
   margin: 52px 110px 24px 138px;
 }
 
-.section__content--title {
+.main__content--title {
   font-family: "Mulish", sans-serif;
   color: #1D1F45;
   width: 342px;
@@ -113,7 +113,7 @@ a {
   line-height: 1em;
 }
 
-.section__content--subtitle {
+.main__content--subtitle {
   font-family: "Montserrat", sans-serif;
   color: #5E5B63;
   width: 482px;
@@ -121,12 +121,12 @@ a {
   padding: 38px 0;
 }
 
-.section__content--image {
+.main__content--image {
   width: 182px;
   padding: 0 0 32px 0;
 }
 
-.section__content--joinButton {
+.main__content--joinButton {
   background-color: #FFB600;
   font-family: "Mulish", sans-serif;
   color: #fefefe;
@@ -138,5 +138,58 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.form {
+  background: #13A6DF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__contact {
+  background: #fefefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 14px;
+  padding: 38px 36px;
+  margin: 56px;
+}
+
+.form__contact--title {
+  font-family: "Montserrat", sans-serif;
+  color: #1D1F45;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 0 0 24px 0;
+}
+
+.form__contact--field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__contact__decoration {
+  background: #fefefe;
 }
 /*# sourceMappingURL=styles.css.map */
