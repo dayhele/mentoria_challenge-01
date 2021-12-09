@@ -7,3 +7,53 @@
 a {
     text-decoration: none;
 }
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+}
+
+input {
+    border: 2px solid #bbbbbb11;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 8px 0;
+
+    &:focus-visible {
+        border-bottom: 1px solid rgb(25, 182, 255);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+textarea {
+    max-width: 929px;
+    height: 382px;
+    border: none;
+
+    &:focus-visible {
+        outline: 1px solid rgb(25, 182, 255);
+        text-indent: 12px;
+        padding-top: 8px;
+    }
+    
+}
+
+select {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    padding-top: 8px;
+
+    &:focus-visible {
+        outline: 1px solid rgb(25, 182, 255);
+        font-size: 18px;
+        
+    }
+}
+

@@ -1,0 +1,42 @@
+.main {
+    &__content {
+        width: calc(100% - 138px);
+        display: flex;
+        flex-direction: column;
+        margin: 88px 110px 88px 138px;
+
+        &--title {
+            font-family: $font-primary;
+            color: $dark-blue;
+            width: 600px;
+            font-size: 108px;
+            letter-spacing: -1px;
+            line-height: 1em;
+        }
+
+        &--subtitle {
+            font-family: $font-secondary;
+            color: #5E5B63;
+            width: 637px;
+            font-size: 21px;
+            padding: 38px 0;
+        }
+
+        &--image {
+            width: 232px;
+            padding: 0 0 38px 0;
+        }
+
+        &--joinButton {
+            background-color: $yellow;
+            font-family: $font-primary;
+            color: $white;
+            font-weight: 600;
+            font-size: 18px;
+            border: 1px solid $white;
+            border-radius: 8px;
+            padding: 12px 32px;
+            width: fit-content;
+        }
+    }
+}

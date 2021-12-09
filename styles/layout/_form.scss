@@ -1,0 +1,56 @@
+.form {
+    background: $light-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__contact {
+        background: $white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 14px;
+        padding: 72px 68px;
+        margin: 56px;
+        width: 100%;
+        max-width: 1000px;
+        align-self: center;
+
+        &--title {
+            font-family: $font-secondary;
+            color: $dark-blue;
+            font-size: 32px;
+            font-weight: 700;
+            padding: 0 0 24px 0;
+        }
+
+        &--field {
+            display: flex;
+            flex-direction: column;
+            font-family: $font-secondary;
+            padding: 16px 0;
+
+        }
+
+        .sendForm {
+            background-color: $violet;
+            font-family: "Mulish", sans-serif;
+            color: #fefefe;
+            font-weight: 600;
+            font-size: 18px;
+            border: 1px solid #fefefe;
+            border-radius: 8px;
+            padding: 12px 32px;
+            width: fit-content;
+            cursor: pointer;
+        }
+
+        &__decoration {
+            background: $white;
+            &--img {
+                width: 100%;
+            }
+        }
+    }
+}
+

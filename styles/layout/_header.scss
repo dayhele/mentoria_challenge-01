@@ -1,0 +1,63 @@
+.header {
+    position: relative;
+    z-index: 1;
+
+    &__content {
+        display: flex;
+        align-items: center;
+
+        &__images {
+            width: calc(100% - 918px);
+            margin: 16px 36px 0 124px;
+            display: flex;
+            align-items: center;
+        }
+
+        &--image {
+            width: 196px;
+            margin: 12px;
+            &:nth-child(2) {width: 72px;}
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 32px 98px auto 24px;
+            z-index: 1;
+        }
+
+        &--contactButton {
+            color: #5E5B63;
+            font-family: $font-secondary;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        &--joinButton {
+            background-color: $white;
+            font-family: $font-primary;
+            color: $violet;
+            font-weight: 600;
+            font-size: 16px;
+            border: 1px solid $white;
+            border-radius: 8px;
+            padding: 12px 32px;
+            width: fit-content;
+        }
+        
+    }
+
+    &__background {
+        width: 100%;
+
+        &--image {
+            width: 882px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 0;
+        }
+    }
+}
