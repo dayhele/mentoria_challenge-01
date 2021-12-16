@@ -267,11 +267,11 @@ select:focus-visible {
 
 .footer {
   position: absolute;
+  width: 100%;
 }
 
 .footer__content {
   margin: 0 110px 88px 138px;
-  position: relative;
   top: -118px;
 }
 
@@ -333,5 +333,54 @@ select:focus-visible {
   font-size: 21px;
   color: #1D1F45;
   padding: 12px 0 0 0;
+}
+
+.footer__content--socialTitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1D1F45;
+}
+
+.footer__content--socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 32px 0 0 0;
+  width: 600px;
+}
+
+.footer__content--socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 168px;
+}
+
+.footer__content--icon {
+  width: 28px;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 112px 0 0 0;
+}
+
+.footer__copyright--title, .footer__copyright--subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
 /*# sourceMappingURL=global.css.map */
