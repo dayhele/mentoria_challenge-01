@@ -8,15 +8,18 @@
 
         &__images {
             width: calc(100% - 918px);
-            margin: 16px 36px 0 124px;
+            margin: 16px 36px 0 168px;
             display: flex;
             align-items: center;
         }
 
         &--image {
-            width: 196px;
+            width: 224px;
             margin: 12px;
-            &:nth-child(2) {width: 72px;}
+
+            &:nth-child(2) {
+                width: 80px;
+            }
         }
 
         &__buttons {
@@ -31,7 +34,7 @@
         &--contactButton {
             color: #5E5B63;
             font-family: $font-secondary;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 18px;
         }
 
@@ -43,10 +46,10 @@
             font-size: 16px;
             border: 1px solid $white;
             border-radius: 8px;
-            padding: 12px 32px;
+            padding: 16px 46px;
             width: fit-content;
         }
-        
+
     }
 
     &__background {
@@ -58,6 +61,33 @@
             right: 0;
             top: 0;
             z-index: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__content {
+            display: block;
+
+            &--image {
+                display: none;
+            }
+
+            &__buttons {
+                display: none;
+            }
+
+            &--background {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        &__background {
+            &--image {
+                display: none;
+            }
         }
     }
 }

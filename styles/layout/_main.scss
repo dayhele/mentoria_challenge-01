@@ -1,9 +1,22 @@
 .main {
     &__content {
-        width: calc(100% - 138px);
+        width: calc(100% - 192px);
         display: flex;
         flex-direction: column;
-        margin: 88px 110px 88px 138px;
+        margin: 88px 110px 88px 182px;
+
+        &__joinButton {
+            background-color: $yellow;
+            font-family: $font-primary;
+            color: $white;
+            font-weight: 600;
+            font-size: 18px;
+            border: 1px solid $white;
+            border-radius: 8px;
+            padding: 14px 36px;
+            width: fit-content;
+            margin-left: 182px;
+        }
 
         &--title {
             font-family: $font-primary;
@@ -20,23 +33,78 @@
             width: 637px;
             font-size: 21px;
             padding: 38px 0;
+            line-height: 1.8em;
         }
 
-        &--image {
-            width: 232px;
-            padding: 0 0 38px 0;
+        &--background {
+            display: none;
         }
 
-        &--joinButton {
-            background-color: $yellow;
-            font-family: $font-primary;
-            color: $white;
-            font-weight: 600;
-            font-size: 18px;
-            border: 1px solid $white;
-            border-radius: 8px;
-            padding: 12px 32px;
-            width: fit-content;
+        &__images {
+
+            &--image {
+                width: 232px;
+                padding: 0 0 38px 0;
+            }
+
+            &--imageMobile {
+                display: none;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+        margin: 0 0 32px 0;
+
+        &__content {
+            width: 100%;
+            margin: 28px;
+
+            &__joinButton {
+                margin-left: 152px;
+                display: flex;
+            }
+
+            &--background {
+                display: block;
+                width: 100%;
+            }
+
+            &--title {
+                font-size: 52px;
+                max-width: 230px;
+                width: 100%;
+            }
+
+            &--subtitle {
+                font-size: 18px;
+                max-width: 382px;
+                width: 100%;
+            }
+
+            &__images {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 38px 0 0 0;
+                width: 100%;
+                max-width: 400px;
+                
+
+                &--imageMobile {
+                    display: block;
+                    width: 126px;
+                    padding: 0 0 38px 0;
+                }
+
+                &--image {
+                    width: 152px;
+                }
+            }
         }
     }
 }
